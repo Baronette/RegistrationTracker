@@ -26,7 +26,7 @@ const CountContextComponent = ({ children }) => {
         </CountsContext.Provider>
     )
 }
-const UseCounts = () => {
+const useCounts = () => {
     return useContext(CountsContext);
 }
-export { CountContextComponent, UseCounts };
+export { CountContextComponent, useCounts };

@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import useForm from '../Hooks/useForm';
-import { UseCounts } from '../CountContext';
+import { useCounts } from '../CountContext';
 
 
 const AddCandidate = () => {
@@ -15,7 +15,7 @@ const AddCandidate = () => {
         notes: ''
     })
     const history = useHistory();
-    const { updateCounts } = UseCounts();
+    const { updateCounts } = useCounts();
 
     const onFormSubmit = async e => {
         e.preventDefault();

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { UseCounts } from './CountContext';
+import { useCounts } from './CountContext';
 
 const Layout = ({children}) => {
-    const {counts: {pending, confirmed, declined}} = UseCounts();
+    const {counts: {pending, confirmed, declined}} = useCounts();
     return (
         <div>
             <header>

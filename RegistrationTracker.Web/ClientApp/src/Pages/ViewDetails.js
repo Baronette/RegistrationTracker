@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useHistory } from 'react-router-dom';
-import { UseCounts } from '../CountContext';
+import { useCounts } from '../CountContext';
 
 const ViewDetails = () => {
     const { id } = useParams();
     const history = useHistory();
-    const { updateCounts } = UseCounts();
+    const { updateCounts } = useCounts();
     const [candidate, setCandidate] = useState({
         firstName: '',
         lastName: '',

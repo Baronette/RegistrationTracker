@@ -13,7 +13,7 @@ const Pending = () => {
     }, [])
     return (
         <div className='container col-md-8 offset-2 mt-3'>
-           {candidates &&  <table className='table table-hover table-striped table-bordered '>
+          <table className='table table-hover table-striped table-bordered '>
                 <thead>
                     <tr>
                         <th>View Details</th>
@@ -34,7 +34,7 @@ const Pending = () => {
                         </tr>
                     )}
                 </tbody>
-            </table>}
+            </table>
         </div>
     )
 }
